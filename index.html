@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>JavaScript Calculator</h1>
+    <div class="calculator-grid">
+      <div class="calculator-screen"></div>
+      <button
+        onclick="
+      calculateThis('1');
+      "
+      >
+        1
+      </button>
+      <button
+        onclick="
+      calculateThis('2');
+      "
+      >
+        2
+      </button>
+      <button
+        onclick="
+      calculateThis('3');
+      "
+      >
+        3
+      </button>
+      <button
+        onclick="
+      calculateThis(' + ');
+      "
+        class="plus-button"
+      >
+        +
+      </button>
+
+      <button
+        onclick="
+      calculateThis('4');
+      "
+      >
+        4
+      </button>
+      <button
+        onclick="
+      calculateThis('5');
+      "
+      >
+        5
+      </button>
+      <button
+        onclick="
+      calculateThis('6');
+      "
+      >
+        6
+      </button>
+      <button
+        onclick="
+      calculateThis(' - ');
+      "
+        class="minus-button"
+      >
+        -
+      </button>
+
+      <button
+        onclick="
+      calculateThis('7');
+      "
+      >
+        7
+      </button>
+      <button
+        onclick="
+      calculateThis('8');
+      "
+      >
+        8
+      </button>
+      <button
+        onclick="
+      calculateThis('9');
+      "
+      >
+        9
+      </button>
+      <button
+        onclick="
+      calculateThis(' * ')
+      "
+        class="mult-button"
+      >
+        *
+      </button>
+
+      <button
+        onclick="
+      calculateThis('0')
+      "
+      >
+        0
+      </button>
+      <button
+        onclick="
+      calculateThis('.')
+      "
+      >
+        .
+      </button>
+      <button
+        onclick="
+     result = eval(result);
+     screenElement.innerText = result;
+     localStorage.setItem('result', result.toString());
+      "
+      >
+        =
+      </button>
+      <button
+        onclick="
+      calculateThis(' / ')
+      "
+        class="div-button"
+      >
+        /
+      </button>
+
+      <button
+        onclick="
+      clearAll();
+      localStorage.removeItem('result');
+      "
+      >
+        Clear
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
